@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #example1{
+
+        background-image:url(xiaohaishi.gif),url(ph_100306_07_0017m.jpg) ;
+        background-size: 10% 30%,700px 650px;
+        background-position:left top,right bottom ;
+        background-repeat:no-repeat,repeat;
+        padding: 50px;
+    }
+
+    #example2{
+        border: 10px dotted black;
+        padding: 35px;
+        background: yellow;
+
+    }
+    #example3{
+        border: 10px dotted black;
+        padding: 35px;
+        background: yellow;
+        background-clip:padding-box ;
+
+
+    }
+    #example4{
+        border: 10px dotted black;
+        padding: 35px;
+        background: yellow;
+        background-clip: content-box;
+
+
+    }
+</style>
+<body>
+<div id="example1">
+    <h1>Lorem Ipsum Dolor</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p>没有背景剪裁 (border-box没有定义):</p>
+<div id="example2">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: padding-box:</p>
+<div id="example3">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: content-box:</p>
+<div id="example4">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+</body>
+</html>
