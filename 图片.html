@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img#ph01{
+            border-radius: 8px;
+        }
+        img#ph02{
+            border-radius: 50%;
+        }
+        img#ph03{
+            border:1px solid #ddd;
+            border-radius: 4px;
+            padding:5px;
+        }
+        a{
+            display: inline-block;
+            border:1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        a:hover{
+            box-shadow: 0 0 2px 1px rgba(0,140,186,0.5);
+        }
+    </style>
+</head>
+<body>
+<h2>圆角图片</h2>
+<p>使用 border-radius 属性来创建圆角图片:</p>
+
+<img id="ph01" src="xiaohaishi.gif" alt="Paris" width="500" height="300">
+
+<h2>椭圆形图片</h2>
+<p>使用 border-radius 属性来创建椭圆形图片：</p>
+<img id="ph02" src="xiaohaishi.gif" alt="Paris" width="500" height="300">
+<h2>缩略图</h2>
+<p>我们使用 border 属性来创建缩略图。</p>
+<img id="ph03" src="xiaohaishi.gif" alt="Paris" width="250" height="150">
+<h2>缩略图</h2>
+<p>我们使用 border 属性来创建缩略图。在图片外层添加一个链接</p>
+<a target="_blank" href="xiaohaishi.gif">
+<img id="ph04" src="xiaohaishi.gif" alt="Paris" width="200" height="130">
+</a>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 100px;
+            height:100px;
+            background: indianred;
+            animation:myfirst 5s;
+            -webkit-animation:myfirst 5s;
+        }
+        @keyframes myfirst {
+            from{background: indianred}
+            to{background: lightslategrey}
+        }
+        @-webkit-keyframes myfirst {
+            from{background: indianred}
+            to{background: lightslategrey}
+        }
+        #div2{
+            width: 100px;
+            height:100px;
+            background: indianred;
+            animation: anime 5s;
+            -moz-animation: anime 5s;
+            -webkit-animation: anime 5s;
+            -o-animation: anime 5s;
+
+        }
+        @keyframes anime {
+            0% {background: indianred}
+            25%{background: lightyellow}
+            50%{background:lightblue;}
+            100%{background: darkseagreen}
+        }
+        @-webkit-keyframes anime {
+            0% {background: indianred}
+            25%{background: lightyellow}
+            50%{background:lightblue;}
+            100%{background: darkseagreen}
+        }
+        @-moz-keyframes anime {
+            0% {background: indianred}
+            25%{background: lightyellow}
+            50%{background:lightblue;}
+            100%{background: darkseagreen}
+        }
+        @-o-keyframes anime {
+            0% {background: indianred}
+            25%{background: lightyellow}
+            50%{background:lightblue;}
+            100%{background: darkseagreen}
+        }
+        #div3{
+            width: 100px;
+            height:100px;
+            background: indianred;
+            position: relative;
+            animation: anime02 5s;
+            -webkit-animation: anime02 5s;
+        }
+        @keyframes anime02 {
+            0%{background: indianred;left:0px;top:0px}
+            25%{background: darkseagreen;left:200px;top:0px}
+            50%{background: lightgoldenrodyellow;left:200px;top:200px}
+            75%{background: cornflowerblue;left:0px;top:200px}
+            100%{background: indianred;left:0px;top:0px}
+
+
+        }
+        @-webkit-keyframes anime02 {
+            0%{background: indianred;left:0px;top:0px}
+            25%{background: darkseagreen;left:200px;top:0px}
+            50%{background: lightgoldenrodyellow;left:200px;top:200px}
+            75%{background: cornflowerblue;left:0px;top:200px}
+            100%{background: indianred;left:0px;top:0px}
+        }
+        #div4{
+            width: 100px;
+            height:100px;
+            background: indianred;
+            position: relative;
+            animation-name: newanime;
+            animation-duration:5s;
+            animation-timing-function:linear ;
+            animation-delay: 2s;
+            animation-iteration-count:infinite ;
+            animation-direction: alternate;
+            animation-play-state:running ;
+            /*safari and chrome*/
+            -webkit-animation-name: newanime;
+            -webkit-animation-duration:5s;
+            -webkit-animation-timing-function:linear ;
+            -webkit-animation-delay: 2s;
+            -webkit-animation-iteration-count:infinite ;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state:running ;
+
+        }
+        @keyframes newanime  {
+            0%{background: indianred;left:0px;top:0px}
+            25%{background: darkseagreen;left:200px;top:0px}
+            50%{background: lightgoldenrodyellow;left:200px;top:200px}
+            75%{background: cornflowerblue;left:0px;top:200px}
+            100%{background: indianred;left:0px;top:0px}
+        }
+        @-webkit-keyframes newanime {
+            0%{background: indianred;left:0px;top:0px}
+            25%{background: darkseagreen;left:200px;top:0px}
+            50%{background: lightgoldenrodyellow;left:200px;top:200px}
+            75%{background: cornflowerblue;left:0px;top:200px}
+            100%{background: indianred;left:0px;top:0px}
+        }
+        #div5{
+            width: 100px;
+            height:100px;
+            background: indianred;
+            position:relative;
+            animation:anime04 5s linear 3s infinite alternate;
+            -moz-animation:anime04 5s linear 3s infinite alternate;
+            -webkit-animation: anime04 5s linear 3s infinite alternate;
+            -o-animation: anime04 5s linear 3s infinite alternate;
+        }
+        @keyframes anime04  {
+            0%{background: indianred;left:0px;top:0px}
+            25%{background: darkseagreen;left:200px;top:0px}
+            50%{background: lightgoldenrodyellow;left:200px;top:200px}
+            75%{background: cornflowerblue;left:0px;top:200px}
+            100%{background: indianred;left:0px;top:0px}
+        }
+        @-moz-keyframes anime04 {
+            0%{background: indianred;left:0px;top:0px}
+            25%{background: darkseagreen;left:200px;top:0px}
+            50%{background: lightgoldenrodyellow;left:200px;top:200px}
+            75%{background: cornflowerblue;left:0px;top:200px}
+            100%{background: indianred;left:0px;top:0px}
+
+        }
+        @-o-keyframes anime04 {
+            0%{background: indianred;left:0px;top:0px}
+            25%{background: darkseagreen;left:200px;top:0px}
+            50%{background: lightgoldenrodyellow;left:200px;top:200px}
+            75%{background: cornflowerblue;left:0px;top:200px}
+            100%{background: indianred;left:0px;top:0px}
+
+        }
+        @-moz-keyframes anime04 {
+            0%{background: indianred;left:0px;top:0px}
+            25%{background: darkseagreen;left:200px;top:0px}
+            50%{background: lightgoldenrodyellow;left:200px;top:200px}
+            75%{background: cornflowerblue;left:0px;top:200px}
+            100%{background: indianred;left:0px;top:0px}
+
+        }
+
+
+    </style>
+</head>
+<body>
+<p><b>注意:</b> 该实例在 Internet Explorer 9 及更早 IE 版本是无效的。</p>
+
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="div4"></div>
+<div id="div5"></div>
+</body>
+</html>
