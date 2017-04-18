@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul.breadcrumb{
+            padding: 8px 16px;
+            list-style: none;
+            background-color: #eee;
+        }
+        ul.breadcrumb li{display: inline;}
+        ul.breadcrumb li+li:before{
+            padding: 8px;
+            color: black;
+            content:"/\00a0";
+        }
+        ul.breadcrumb li a{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<ul class="breadcrumb">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">前端</a></li>
+    <li><a href="#">HTML 教程</a></li>
+    <li>HTML 段落</li>
+</ul>
+</body>
+</html>

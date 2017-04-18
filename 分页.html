@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul.pagination{
+            display: inline-block;
+            padding:0;
+            margin:0;
+        }
+        ul.pagination li{
+            display: inline;
+        }
+        ul.pagination li a{
+            border: 1px solid #ddd;
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+
+            transition: background-color .3s;
+        }
+        ul.pagination li a.active{
+            background-color: #4CAF50;
+            color: white;
+
+        }
+        ul.pagination li a:hover:not(.active){
+            background-color: #ddd;
+        }
+        ul.pagination li a.active:hover{
+            background-color: lightslategrey;
+            color: white;
+        }
+        .pagination li:first-child a{
+            border-top-left-radius:7px;
+            border-bottom-left-radius:7px;
+        }
+        .pagination li:last-child a{
+            border-top-right-radius: 7px;
+            border-bottom-right-radius:7px;
+        }
+
+    </style>
+</head>
+<body>
+<h2></h2>
+<ul class="pagination">
+    <li><a href="#"><<</a></li>
+    <li><a href="#">1</a></li>
+    <li><a class="active" href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">>></a></li>
+</ul>
+</body>
+</html>
